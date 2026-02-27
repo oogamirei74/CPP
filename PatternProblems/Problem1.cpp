@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// ****
+// ****
+// ****
+// ****
 void pattern1(int n){
 	for(int i = 0; i < n; i++){
 		for(int j = 0; j < n; j++){
@@ -10,6 +15,10 @@ void pattern1(int n){
 	}
 }
 
+// *
+// **
+// ***
+// ****
 void pattern2(int n){
 	for(int i = 0; i < n; i++){
 		for(int j = 0; j <= i; j++){
@@ -19,6 +28,10 @@ void pattern2(int n){
 	}
 }
 
+// 1
+// 12
+// 123
+// 1234
 void pattern3(int n){
 	for(int i = 1; i <= n; i++){
 		for(int j = 1; j <= i; j++){
@@ -28,6 +41,10 @@ void pattern3(int n){
 	}
 }
 
+// 1
+// 22
+// 333
+// 4444
 void pattern4(int n){
 	for(int i = 1; i <= n; i++){
 		for(int j = 1; j <= i; j++){
@@ -37,15 +54,23 @@ void pattern4(int n){
 	}
 }
 
+// ****
+// ***
+// **
+// *
 void pattern5(int n){
 	for(int i = 1; i <= n; i++){
-		for(int j = 1; j < n - i + 1; j++){
+		for(int j = 1; j <= n - i + 1; j++){
 			cout << "* ";
 		}
 		cout << endl;
 	}
 }
 
+// 1234
+// 123
+// 12
+// 1
 void pattern6(int n){
 	for(int i = 1; i <= n; i++){
 		for(int j = 1; j <= n - i + 1; j++){
@@ -55,6 +80,10 @@ void pattern6(int n){
 	}
 }
 
+//    *
+//   ***
+//  *****
+// *******
 void pattern7(int n){
 	for(int i = 0; i < n; i++){
 		//space
@@ -73,6 +102,10 @@ void pattern7(int n){
 	}
 }
 
+// *******
+//  *****
+//   ***
+//    *
 void pattern8(int n){
 	for(int i = 0; i < n; i++){
 		//space
@@ -91,11 +124,26 @@ void pattern8(int n){
 	}
 }
 
+//    *
+//   ***
+//  *****
+// *******
+// *******
+//  *****
+//   ***
+//    *
 void pattern9(int n){
 	pattern7(n);
 	pattern8(n);
 }
 
+// *
+// **
+// ***
+// ****
+// ***
+// **
+// *
 void pattern10(int n){
 	for(int i = 1; i <= (2*n - 1); i++){
 		int stars = i;
@@ -107,6 +155,10 @@ void pattern10(int n){
 	}
 }
 
+// 1
+// 01
+// 101
+// 0101
 void pattern11(int n){
 	int start = 1;
 	for(int i = 0; i < n; i++){
@@ -120,6 +172,10 @@ void pattern11(int n){
 	}
 }
 
+// 1      1
+// 12    21
+// 123  321
+// 12344321
 void pattern12(int n){
 	int spaces = 2 * (n - 1);
 	for(int i = 1; i <= n; i++){
