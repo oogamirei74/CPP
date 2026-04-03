@@ -1,6 +1,20 @@
 **/*.in
+# 1. Ignore everything by default (this catches Linux binaries with no extension)
+*
+
+# 2. Allow folders so Git can look inside them
+!*/
+
+# 3. Allow all files that have an extension (like .cpp, .h)
+!*.*
+
+# 4. Now, EXPLICITLY ignore the files you don't want on GitHub
 *.exe
-*.out
 *.o
+*.out
+*.pdb
 inputf.in
 outputf.in
+
+# 5. Ensure the gitignore itself is always tracked
+!.gitignore
